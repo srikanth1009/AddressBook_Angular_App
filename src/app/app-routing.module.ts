@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddAddressComponent } from './component/add-address/add-address.component';
 import { DashBoardComponent } from './component/dash-board/dash-board.component';
-import { HeaderComponent } from './component/header/header.component';
+
 
 const routes: Routes = [
   
-    { path: 'header', component: HeaderComponent },
-    { path: 'dashbord', component: DashBoardComponent },
+  { path: '', component: DashBoardComponent },
+  { path: 'dashboard', component: DashBoardComponent },
+  {path:'addcontact', component:AddAddressComponent}
   
 ];
 

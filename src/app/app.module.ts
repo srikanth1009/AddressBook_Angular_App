@@ -7,6 +7,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { DashBoardComponent } from './component/dash-board/dash-board.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddAddressComponent } from './component/add-address/add-address.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { AddAddressComponent } from './component/add-address/add-address.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

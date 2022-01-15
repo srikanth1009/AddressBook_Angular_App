@@ -23,4 +23,14 @@ export class DashBoardComponent implements OnInit {
        });
 
 }
+delete(id:number){
+  this.contactList.slice(id);
+  
+  this.address.deleteAdd(id).subscribe((data => {
+      console.log(data)
+      console.log(id)
+  }))
+  alert("Your data is Deleted succesfully")
 }
+}
+  

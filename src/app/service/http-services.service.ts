@@ -18,5 +18,11 @@ export class HttpServicesService {
     // const deleteEndpoint=environment.api_url+'/delete/'+Id;
     return this.httpClient.delete(`${this.baseUrl}/delete/${id}`);
   }
+  //Update
+  editContact(reourceBody: { name : string; address : string; city : string; state : string; zip : number; phone : string;},id:number){
+    // const editEndpoint='api_url/update'+id;
+   return this.httpClient.put(`${this.baseUrl}/update/${id}`,reourceBody);
   
+  
+}
 }

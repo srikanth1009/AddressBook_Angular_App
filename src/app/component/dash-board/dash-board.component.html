@@ -30,7 +30,7 @@
         <td>{{address.phone}}</td>
         <td>
           <img src="../assets/delete-black-18dp.svg" alt="delete" (click)="delete(address.id)"  />
-          <img src="../assets/create-black-18dp.svg" alt="edit" />
+          <img src="../assets/create-black-18dp.svg" alt="edit" (click)="editData(address.id)" />
         </td>
       </tr>
     </table>
